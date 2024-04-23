@@ -1,5 +1,5 @@
 @extends('main-admin')
 
-@section('datos')
+@section('titulado')
     
 @endsection

@@ -38,6 +38,7 @@ class AdminController extends Controller
     function editUser($id) {
         $cliente = User::find($id);
 
+        return view('plantillas.admin.editusuario', ['cliente' => $cliente, 'titulado' => "editar"]);
     }
 
     function guardarSalon(SalonesPostRequest $request) {

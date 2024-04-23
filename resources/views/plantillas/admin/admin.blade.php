@@ -40,7 +40,7 @@
                         <td>{{$cliente->phone}}</td>
                         <td>{{$cliente->email}}</td>
                         <td><a href="{{ url('onDelete/'.$cliente->id) }}" ><img src="svg/trash-can.svg"></a>
-                            <a href="{{ url('onEdit/'.$cliente->id)}}" onclick="variable();"><img src="svg/pen-edit.svg" alt=""></a>
+                        <a href="{{ url('onEdit/'.$cliente->id)}}"><img src="svg/pen-edit.svg" alt=""></a>
                         </td>
                         <td>
                             @if ($cliente->salon) <!-- Verifica si el cliente tiene un salón asociado -->

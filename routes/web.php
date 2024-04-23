@@ -41,7 +41,7 @@ Route::controller(AdminController::class)->group(function(){
     Route::get('/añadir', 'añadir');
     Route::post('nuevoSalon', 'guardarSalon')->name('nuevoSalon');
     Route::get('onDelete/{id}', 'deleteUser');
-    Route::get('onEdit/{id}', 'guardarCambios');
+    Route::get('onEdit/{id}', 'editUser');
     Route::get('editar', 'toggleEditing');
 });
 
